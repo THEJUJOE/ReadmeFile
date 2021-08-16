@@ -460,25 +460,26 @@ You cannot move a Source machine that is in the middle of a Job (launching 
 **Note**: Projects that are not listed do not match the criteria.
 
 1. The selected Source machine will be moved to the destination Project, and it will no longer appear on the **Machines** page of the original Project. A message will appears on the upper right corner, informing you that **X machine moved**.
-   ![https://docs.cloudendure.com/Content/Resources/Images/Resetting%20Your%20Password\_49.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.037.png)
+   <img width="151" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 037" src="https://user-images.githubusercontent.com/88475952/129564628-698a270a-c2cf-4596-b3ff-f24128f81853.png">
    When you select the destination Project from the **Project** list, the moved machine will appear on its **Machines** page. From there, continue with the steps in the Performing a Failback Using the CloudEndure Conosle section.
 
 
 ### **3.3.9 Return to normal operations.**
 1) Once the Target machines have been launched, click the PROJECT ACTIONS menu and select Return to Normal Operation to reverse the direction of Data Replication back to its normal state (original Source to original Target.)
 
-![https://docs.cloudendure.com/Content/Resources/Images/pre10%20(1)%20(1).png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.038.png)
 
-![https://docs.cloudendure.com/Content/Resources/Images/rep7.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.039.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 038](https://user-images.githubusercontent.com/88475952/129564776-236b1551-5205-4683-a8c4-affc90823515.png)
+
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 039](https://user-images.githubusercontent.com/88475952/129564877-b8ef8e44-078e-48bc-9846-ee9cf7c54384.png)
 
 1) Click CONTINUE on the Return to Normal dialog.
 1) Your machines will yet again undergo the initiation sequence.
 
-![https://docs.cloudendure.com/Content/Resources/Images/pre12.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.040.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 040](https://user-images.githubusercontent.com/88475952/129565016-fb3d3714-e945-4b4e-b207-6557deb712f1.png)
 
 d)Once your machines enter Continuous Data Protection mode, the Failback process has been successfully completed.
 
-![https://docs.cloudendure.com/Content/Resources/Images/pre13.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.041.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 029](https://user-images.githubusercontent.com/88475952/129565082-5d189c88-60d7-4ddb-bfb5-90a7358b2334.png)
 
 
 ### **3.4 Post Launch Scripts**
