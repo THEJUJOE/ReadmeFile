@@ -2,15 +2,16 @@
 
 
 |Capgemini-Sogeti-Onedeliver|
-| :- |
-|Disaster Recovery Cloud Endure|
+
+# |Disaster Recovery Cloud Endure|
+
 |Process Document|
 
 
 
 
 
-1. ## **Introduction**
+###  **1. Introduction**
 
 IT disasters such as data canter failures, server corruptions, or cyber-attacks can not only disrupt your business, but also cause data loss, impact your revenue, and damage your reputation. Cloud Endure Disaster Recovery minimizes downtime and data loss by providing fast, reliable recovery of physical, virtual, and cloud-based servers into AWS.
 
@@ -20,7 +21,7 @@ Cloud Endure Disaster Recovery continuously replicates your machines (including 
 
 By replicating your machines into a low-cost staging area while still being able to launch fully provisioned machines within minutes, Cloud Endure Disaster Recovery can significantly reduce the cost of your disaster recovery infrastructure.
 
-## **2. Benefits of CloudEndure Disaster Recovery**
+### **2. Benefits of CloudEndure Disaster Recovery**
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 001](https://user-images.githubusercontent.com/88475952/129553902-eb81cc41-8851-4877-8bfb-23de5058ad2b.png)
 
 - Significant reduction in total cost of ownership (TCO) compared to traditional disaster recovery solutions 
@@ -40,14 +41,15 @@ By replicating your machines into a low-cost staging area while still being able
 
 
 
-## **3. Cloud Endure Disaster Recovery**
-### **3.1 SAML Single Sign-On**
+###**3. Cloud Endure Disaster Recovery**
+#### **3.1 SAML Single Sign-On**
 CloudEndure allows you to sign into the CloudEndure [User Console](javascript:void\(0\);) using your corporate credentials through our SAML integration (SSO).
 
 In order to use SAML to sign into the CloudEndure [User Console](javascript:void\(0\);), you must first configure Single Sign-On SAML Authentication.
 
 The following instructions illustrate how to configure Single Sign-On SAML Authentication through the Microsoft Active Directory Federated Services (ADFS).
-### **3.1.1 Single Sign-On SAML Authentication through ADFS**
+
+#### **3.1.1 Single Sign-On SAML Authentication through ADFS**
 
 1. In the Server Manager, click Tools, and then select AD FS Management.
 1. Under Actions, click Add Relying Party Trust.
@@ -80,7 +82,8 @@ In the Edit Claim Issuance Policy dialog box, navigate to Issuance Transform 
    1. LDAP Attribute: User-Principal-Name
    1. Click Finish
 1. In the Edit Claim Rules dialog box, click OK to save the rule.
-### **3.1.2 Enabling RelayState in ADFS**
+
+#### **3.1.2 Enabling RelayState in ADFS**
 RelayState is a parameter of the SAML protocol that is used to identify the specific resource the user will access after they are signed in and directed to the relying party’s federation server.
 
 **Note**: Certain identity management providers, such as OKTA, require users to set the relayState value manually. Input the following value: https://console.cloudendure.com/#/signIn;<CloudEndure account UUID>
@@ -96,7 +99,8 @@ For ADFS 2.0, you must install update KB2681584 (Update Rollup 2) or KB2790338 (
 <microsoft.identityServer.web> ...    
 <useRelayStateForIdpInitiatedSignOn enabled="true" /> ...
 </microsoft.identityServer.web>
-### **3.1.3 Configuring SAML in the CloudEndure Console with AD FS**
+
+####**3.1.3 Configuring SAML in the CloudEndure Console with AD FS**
 
 1. Before SSO can be used, you will need to set up the following parameters within the CloudEndure Console. You can obtain these parameters by following these directions:
    1. Identity Provider ID
@@ -130,9 +134,12 @@ For ADFS 2.0, you must install update KB2681584 (Update Rollup 2) or KB2790338 (
 1. You can rest the SAML configuration by clicking REST CONFIGURATION. Note that resetting SAML settings is likely to prevent other users from being able to log into the CloudEndure Account.
 
    Click YES on the warning dialog to confirm the reset.
-### **3.2 Signing into the CloudEndure User Console Using Corporate Credentials**
+#### **3.2 Signing into the CloudEndure User Console Using Corporate Credentials**
+
 Once SAML integration is configured, you can sign in to the CloudEndure User Console either through the CloudEndure User Console Sign In page or through a direct login link.
-## **3.2.1 Manual Sign In**
+
+####**3.2.1 Manual Sign In**
+
 1. Navigate to the CloudEndure User Console Sign In page.
 1. Click on Use corporate credentials (SSO) on the bottom.
 
@@ -146,7 +153,8 @@ Once SAML integration is configured, you can sign in to the CloudEndure User Co
 <img width="179" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 006" src="https://user-images.githubusercontent.com/88475952/129555623-1c890eba-d8d7-4d60-8e46-999f7404cf6a.png">
 
 4. You will be automatically redirected to the login screen of your Identity Provider. Follow the login operations using your organizational credentials. Once logged in, you will be automatically redirect directly into the CloudEndure User Console as a signed in user.
-## **3.2.2 Automatic Sign in using a Direct Link**
+
+#### **3.2.2 Automatic Sign in using a Direct Link**
 
 Alternatively, you can navigate directly to https://console.cloudendure.com/#/signIn?accountIdentifier=XXXXXXXXXX (replace XXXXXXXXXX with your CloudEndure Account Identifier.)
 
@@ -191,7 +199,7 @@ The REPLICATION SETTINGS page enables you to define your Source and Target�
 - After you make your selection, the installation starts. By default, when the installation is completed successfully, the replication of the Source machines starts automatically, and you can monitor it through the CloudEndure User Console.
 - In addition to the standard installation procedure, CloudEndure provides you with additional installation options, which enable you to customize the installation to your network and corporate needs. These installation options include, among others: using command line arguments, installing the Agent without automatically starting replication, and performing a silent installation.
 
-**3.3.2 Configure the [Target machine](javascript:void\(0\);) Blueprint for each [machine](javascript:void\(0\);).**
+####**3.3.2 Configure the [Target machine](javascript:void\(0\);) Blueprint for each [machine](javascript:void\(0\);).**
 
 - The Target machine Blueprint is a set of instructions on how to launch a Target machine for the selected Source machine. The Blueprint settings will serve as the base settings for the creation of the Target machine.
 - You can change the Blueprint after the Target machine has been launched. For the new Blueprint setting to take effect, you will need to launch a new Target machine.
@@ -208,7 +216,7 @@ The REPLICATION SETTINGS page enables you to define your Source and Target�
 1) **Security groups** – Security Groups are connected to subnets. You can change the default Security Group only if you selected an existing subnet (and NOT the Create New option). Therefore, if you want to configure the Security Groups value, it is recommended to set in advance its subnet, so the subnet will already appear on the Subnet drop-down list.
 1) **Private IP** – Each machine that is launched in the cloud will be allocated a Private IP. By default, a new Private IP is created. You can also set a custom Private IP.
 
-**3.3.3 Wait until all machines enter Continuous Data Protection.**
+####**3.3.3 Wait until all machines enter Continuous Data Protection.**
 
 Once communication is established between the Agent and the Replication Server, Data Replication begins. The following are the Data Replication steps:
 
@@ -222,7 +230,7 @@ Once these steps are completed, the machine will be launchable and will show 
 
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 015](https://user-images.githubusercontent.com/88475952/129558068-e7940a37-7ddc-4794-bd14-2d10d684fbaf.png)
 
-**3.3.4 [Test](javascript:void\(0\);) the [Failover](javascript:void\(0\);) by creating one or more [Target](javascript:void\(0\);) machines.** 
+####**3.3.4 [Test](javascript:void\(0\);) the [Failover](javascript:void\(0\);) by creating one or more [Target](javascript:void\(0\);) machines.** 
 
 This will create [Target](javascript:void\(0\);) machines for the selected [Source](javascript:void\(0\);) machines based on [machine](javascript:void\(0\);) and network properties you defined in the Blueprint section for each. The [Test](javascript:void\(0\);) does not stop replication.
 
@@ -235,7 +243,7 @@ This will create [Target](javascript:void\(0\);) machines for the selected [S
 1) If your Target infrastructure is an extension of your Source, it is recommended that you isolate the Target subnet to ensure that the test Target machines will not affect your original workloads. Do not forget to remove the isolation (or select a different subnet in the Blueprint page) before performing an actual Failover.
 1) After the Target machines are created, allow them time to boot.
 
-**3.3.5 Initiate a [Failover](javascript:void\(0\);).**
+####**3.3.5 Initiate a [Failover](javascript:void\(0\);).**
 
 1) Before you start the Failover, open the User Console > Machines page. There, verify that the Source machine you want to Failover has the following status indications under each column.
 - **DATA REPLICATION PROGRESS** - Continuous Data Protection
@@ -248,9 +256,9 @@ This will create [Target](javascript:void\(0\);) machines for the selected [S
 1) Choose the Recovery Point for the Target machine in Recovery Mode. This will indicate which Recovery Point the system will use when launching new Target machines for the Failover. You can either choose the Latest Recovery Point, or a previous Recovery Point from the list.
 1) After choosing your Recovery Point, click CONTINUE WITH LAUNCH.
 1) Most infrastructures allow the following Recovery Point schedules:
-1. `  `every 10 minutes in the past hour
-1. ` `every 1 hour in the past 24 hours
-1. ` `every 1 day in the past 30 days
+1. ` ` every 10 minutes in the past hour
+1. ` ` every 1 hour in the past 24 hours
+1. ` ` every 1 day in the past 30 days
 1) vCenter only allows you a single Recovery Point every 1 day in the past 25 days.
 1) A message will appear on the upper right corner of the CloudEndure User Console, informing you that the Failover has started and that a Target machine is being launched for the selected Source machine.
    ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 020](https://user-images.githubusercontent.com/88475952/129559286-8364e2ac-7a24-4b1c-9aaf-ed3183cf30da.png)
@@ -260,8 +268,9 @@ This will create [Target](javascript:void\(0\);) machines for the selected [S
 
 To view additional information on the test, click the Source machine. The Machine Dashboard page will appear, displaying the date of the Failover (last recovery launch.)
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 022](https://user-images.githubusercontent.com/88475952/129559645-0ef3627a-4a71-4453-a034-97326b876602.png)
-## **3.3.6 Failing Over specific machines**
-` `To **Failover** specific machines, you will need to create a new Project and configure it identically to your original DR Project (same Target region, license, credentials and Replication Settings.) Once you have the Project ready:
+#### **3.3.6 Failing Over specific machines**
+
+To **Failover** specific machines, you will need to create a new Project and configure it identically to your original DR Project (same Target region, license, credentials and Replication Settings.) Once you have the Project ready:
 
 1. Check the box to the left of the specific machines you want to Failover in the original Project and move them to the newly created Project using the **Move X Machines to Another Project** option within the **Machine Actions** menu.
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 023](https://user-images.githubusercontent.com/88475952/129559792-5e173e24-4deb-4f12-a1e2-c68b894bd301.png)
@@ -271,7 +280,8 @@ To view additional information on the test, click the Source machine. The Mach
 
 **Note**: If you have already launched a Target machine for the machine you are moving, then you do not need to launch a new Target machine after moving the machine to a new Project.
 
-### **3.3.7 Performing a Failback with CloudEndure**
+#### **3.3.7 Performing a Failback with CloudEndure**
+
 In the event of planned or unplanned downtime, begin the Failover process by using the CloudEndure User Console to launch recovery machines in your Disaster Recovery Target infrastructure.
 
 **Note**: CloudEndure performs most Failover and Failback related operations other than the actual redirection of traffic from the primary site to the Disaster Recovery site.
@@ -306,7 +316,9 @@ The following instructions illustrate how to perform a Failback with the aid o
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 029](https://user-images.githubusercontent.com/88475952/129562661-076ea2a6-1804-4200-b7c7-4e4ecf2c46ba.png)
 
 1. **[**vCenter as a Source infrastructure only] You must edit the Failback Settings of any Project prior to performing the Failback. These settings will be used as a template for the Replication Settings of each of your machines when you perform a Failback.
-#### **AWS to vCenter Failback**
+
+**AWS to vCenter Failback**
+
 <img width="445" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 030" src="https://user-images.githubusercontent.com/88475952/129561551-9192c5fb-ce0f-4206-a1ab-5bf1c2be75da.png">
 1. To change the Failback settings, navigate to the Setup & Info tab on the left-hand navigation menu and click on FAILBACK SETTINGS.
 
@@ -359,7 +371,7 @@ The following instructions illustrate how to perform a Failback with the aid o
 1. Select the Latest Recovery Point and click CONTINUE WITH LAUNCH.
 1. When the Test or the Recovery are finished, the Failback Client will indicate that the failback has been finished and that the machine will be rebooted. The Target machine will eject the Failback Client and reboot into the new operating system.
             
-## **3.3.8Failing Back specific machines**
+#### **3.3.8 Failing Back specific machines**
 In certain cases, you may want to perform a failback for a single machine (or various - but not all - machines) in a Project with multiple machines (AWS Source or a vCenter Source to an AWS Target.)
 
 This can be achieved by moving the desired machines into a separate Project and performing the failback as discussed in the Performing a Failback Using the CloudEndure Console section above.
@@ -402,7 +414,7 @@ You cannot move a Source machine that is in the middle of a Job (launching 
    When you select the destination Project from the **Project** list, the moved machine will appear on its **Machines** page. From there, continue with the steps in the Performing a Failback Using the CloudEndure Conosle section.
 
 
-### **3.3.9 Return to normal operations.**
+#### **3.3.9 Return to normal operations.**
 1) Once the Target machines have been launched, click the PROJECT ACTIONS menu and select Return to Normal Operation to reverse the direction of Data Replication back to its normal state (original Source to original Target.)
 
 
@@ -456,6 +468,7 @@ SET /a index += 1
 
 **Note**: This script it will only clear the readonly flag, and won't bring the disk online. If you want it to change all disks to online as well, delete the REM from the following line:
 ECHO REM online disk>>offreadonlyfile.txt
+
 #### *Uninstalling VMTools from Windows*
 The following script can be utilized to uninstall VMTools post migration from Windows. CloudEndure does not recommend doing this for Failed Over Disaster Recovery servers.
 
