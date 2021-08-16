@@ -41,7 +41,7 @@ By replicating your machines into a low-cost staging area while still being able
 
 
 
-###**3. Cloud Endure Disaster Recovery**
+### **3. Cloud Endure Disaster Recovery**
 #### **3.1 SAML Single Sign-On**
 CloudEndure allows you to sign into the CloudEndure [User Console](javascript:void\(0\);) using your corporate credentials through our SAML integration (SSO).
 
