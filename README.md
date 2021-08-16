@@ -159,14 +159,15 @@ Once SAML integration is configured, you can sign in to the CloudEndure User Co
 Alternatively, you can navigate directly to https://console.cloudendure.com/#/signIn?accountIdentifier=XXXXXXXXXX (replace XXXXXXXXXX with your CloudEndure Account Identifier.)
 
 This link will immediately redirect you to the login screen of your Identity Provider. After logging in with your Identity Provider, you will be automatically redirected into the CloudEndure User Console as a signed in user.
-# **3.3 The Disaster Recovery Process**
+            
+### **3.3 The Disaster Recovery Process**
 **Disaster Recovery Life Cycle**![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 007](https://user-images.githubusercontent.com/88475952/129555875-ded739f4-8fc0-44ef-9f7d-8da0d1aa2a29.png)
 
 **Network Architecture**
 
 
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 008](https://user-images.githubusercontent.com/88475952/129556207-8510e3ab-3dae-40d9-94c4-a6db224b6517.png)
-### **3.3.1 Install the Cloud Endure [Agent](javascript:void\(0\);) on the [Source machine](javascript:void\(0\);).**
+#### **3.3.1 Install the Cloud Endure [Agent](javascript:void\(0\);) on the [Source machine](javascript:void\(0\);).**
 Before installing Agent, need to edit the Replication settings in CE Console.
 
 The REPLICATION SETTINGS page enables you to define your Source and Target environments, and the default Replication Servers in the Staging Area of the Target infrastructure.
