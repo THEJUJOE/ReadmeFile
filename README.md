@@ -10,7 +10,7 @@
 
 
 
-1. # **Introduction**
+1. ## **Introduction**
 
 IT disasters such as data canter failures, server corruptions, or cyber-attacks can not only disrupt your business, but also cause data loss, impact your revenue, and damage your reputation. Cloud Endure Disaster Recovery minimizes downtime and data loss by providing fast, reliable recovery of physical, virtual, and cloud-based servers into AWS.
 
@@ -20,7 +20,7 @@ Cloud Endure Disaster Recovery continuously replicates your machines (including 
 
 By replicating your machines into a low-cost staging area while still being able to launch fully provisioned machines within minutes, Cloud Endure Disaster Recovery can significantly reduce the cost of your disaster recovery infrastructure.
 
-# **2. Benefits of CloudEndure Disaster Recovery**
+## **2. Benefits of CloudEndure Disaster Recovery**
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 001](https://user-images.githubusercontent.com/88475952/129553902-eb81cc41-8851-4877-8bfb-23de5058ad2b.png)
 
 - Significant reduction in total cost of ownership (TCO) compared to traditional disaster recovery solutions 
@@ -41,7 +41,7 @@ By replicating your machines into a low-cost staging area while still being able
 
 
 ## **3. Cloud Endure Disaster Recovery**
-## **3.1 SAML Single Sign-On**
+### **3.1 SAML Single Sign-On**
 CloudEndure allows you to sign into the CloudEndure [User Console](javascript:void\(0\);) using your corporate credentials through our SAML integration (SSO).
 
 In order to use SAML to sign into the CloudEndure [User Console](javascript:void\(0\);), you must first configure Single Sign-On SAML Authentication.
@@ -61,7 +61,7 @@ The following instructions illustrate how to configure Single Sign-On SAML Authe
 
 Note: Alternatively, try https://console.cloudendure.com/api/v4/assertionConsumerService
 
-1. Click Next.
+   1. Click Next.
 
 1. On the Configure Identifiers page, specify https://console.cloudendure.com as an identifier for this relying party, click Add to add it to the list, and then click Next.
 1. On the Choose Access Control Policy page, select a policy and click Next. For more information about Access Control Policies, see Access Control Policies in AD FS.|
