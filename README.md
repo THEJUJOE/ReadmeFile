@@ -186,7 +186,8 @@ For ADFS 2.0, you must install update KB2681584 (Update Rollup 2) or KB2790338 (
       1. Click SAVE CONFIGURATION.
 
 
-![https://docs.cloudendure.com/Content/Resources/Images/Configure%20Single%20Sign%20On\_1.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.004.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 004](https://user-images.githubusercontent.com/88475952/129555060-5cd5979c-4196-41c9-bdda-6d405ec6f403.png)
+
 
 1. You can rest the SAML configuration by clicking REST CONFIGURATION. Note that resetting SAML settings is likely to prevent other users from being able to log into the CloudEndure Account.
 
@@ -198,7 +199,8 @@ Once SAML integration is configured, you can sign in to the CloudEndure User Co
 1. Click on Use corporate credentials (SSO) on the bottom.
 
 
-![C:\Users\Pavel-pc\Documents\My Projects\CloudEndure Manual\Output\Pavel\_pc\HTML5\Content\Resources\Images\saml6.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.005.png)
+
+<img width="180" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 005" src="https://user-images.githubusercontent.com/88475952/129555333-804de727-1d91-4454-b5d7-d748f3178102.png">
 
 3. Enter your CloudEndure Account Identifier to sign in and click CONTINUE. The Account Identifier is a unique identified allocated to your Account by CloudEndure. You can obtain your Account Identifier as explained in this FAQ item.
 
