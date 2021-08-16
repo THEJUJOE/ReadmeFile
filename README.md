@@ -205,7 +205,7 @@ Once SAML integration is configured, you can sign in to the CloudEndure User Co
 3. Enter your CloudEndure Account Identifier to sign in and click CONTINUE. The Account Identifier is a unique identified allocated to your Account by CloudEndure. You can obtain your Account Identifier as explained in this FAQ item.
 
 
-![C:\Users\Pavel-pc\Documents\My Projects\CloudEndure Manual\Output\Pavel\_pc\HTML5\Content\Resources\Images\saml7.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.006.png)
+<img width="179" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 006" src="https://user-images.githubusercontent.com/88475952/129555623-1c890eba-d8d7-4d60-8e46-999f7404cf6a.png">
 
 4. You will be automatically redirected to the login screen of your Identity Provider. Follow the login operations using your organizational credentials. Once logged in, you will be automatically redirect directly into the CloudEndure User Console as a signed in user.
 ## **3.2.2 Automatic Sign in using a Direct Link**
@@ -214,11 +214,12 @@ Alternatively, you can navigate directly to https://console.cloudendure.com/#/s
 
 This link will immediately redirect you to the login screen of your Identity Provider. After logging in with your Identity Provider, you will be automatically redirected into the CloudEndure User Console as a signed in user.
 # **3.3 The Disaster Recovery Process**
-**Disaster Recovery Life Cycle![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.007.png)**
+**Disaster Recovery Life Cycle**![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 007](https://user-images.githubusercontent.com/88475952/129555875-ded739f4-8fc0-44ef-9f7d-8da0d1aa2a29.png)
 
 **Network Architecture**
 
-![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.008.png)
+
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 008](https://user-images.githubusercontent.com/88475952/129556207-8510e3ab-3dae-40d9-94c4-a6db224b6517.png)
 ### **3.3.1 Install the Cloud Endure [Agent](javascript:void\(0\);) on the [Source machine](javascript:void\(0\);).**
 Before installing Agent, need to edit the Replication settings in CE Console.
 
@@ -226,25 +227,26 @@ The REPLICATION SETTINGS page enables you to define your Source and Target�
 
 - After entering your AWS credentials in the Cloud Endure User Console, navigate to Setup & Info > REPLICATION SETTINGS.
 
-![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.009.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 009](https://user-images.githubusercontent.com/88475952/129557882-ba1f80ec-5990-43ff-82c9-04fb70c6ac41.png)
 
 - Next, you will need to define your Source and Target infrastructures and regions.
 - After selecting your Source and Target infrastructures and regions, you will need to define your default Replication Servers.
 
-![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.010.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 010](https://user-images.githubusercontent.com/88475952/129556565-589e22c2-eb50-441a-b409-0f714aa5c544.png)
 
 - When the Use VPN... box is checked, you will have the option to disable the use of Public IPs. Public IPs are enabled by default.
 - Check the box to the left of Disable Public IP to disable the Public IP.
 
-![https://docs.cloudendure.com/Content/Resources/Images/publicip.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.011.png)
 
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 011](https://user-images.githubusercontent.com/88475952/129556868-660f159a-e38f-4e51-899c-fe510f1f8b64.png)
+            
 - If you will be connecting to CloudEndure via a proxy server, you will need to define its URL and Port number.
   - Enter your proxy URL under the Define whether to route communication from the Replication Server via a proxy: field after the https://. Enter the port in the port field
 
-![https://docs.cloudendure.com/Content/Resources/Images/CloudEndure\_14%20(2).png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.012.png) 
+<img width="353" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 012" src="https://user-images.githubusercontent.com/88475952/129557141-3d8d2374-0c31-46bf-a4bf-df34bb7a5cc0.png">
 
 - Once you have set all of your settings, click the SAVE REPLICATION SETTINGS button at the bottom of the page.
-  ![https://docs.cloudendure.com/Content/Resources/Images/135.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.013.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 013](https://user-images.githubusercontent.com/88475952/129557293-f8e02aa4-df30-4591-9cbb-dbd129b21406.png)
 - The Agent is installed using an Agent Installer file, which can be downloaded from the Cloud Endure User Console. There are two Agent Installer files - one for Source machines that run all supported Windows OS, and one for machines that run all supported Linux OS.
 - The standard installation procedure is simple and quick, and does not require a reboot or any interruption to the applications that are running on the Source machine. After you download and run the Agent Installer file, you are prompted to enter your CloudEndure Installation Token, and to select the disks you want to replicate.
 - When selecting disks for replication, you should be aware that the Agent replicates whole disks. Therefore, if you choose to replicate a partition, its entire disk will be replicated, including all the other partitions of this disk. In addition, the root disk of the Source machine is always replicated, whether you select it or not, since it is required for the launch of the Target machine.
@@ -257,7 +259,8 @@ The REPLICATION SETTINGS page enables you to define your Source and Target�
 - You can change the Blueprint after the Target machine has been launched. For the new Blueprint setting to take effect, you will need to launch a new Target machine.
 - Select the BLUEPRINT tab from the right-hand top navigation menu.
 
-![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.014.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 014](https://user-images.githubusercontent.com/88475952/129557631-13f8db7e-8ae0-44af-acae-6e69113d1789.png)
+)
 
 - You can configure an individual machine's Blueprint by editing the fields in the BLUEPRINT tab. Settings differ by platform. The following fields are available:
 1) **Machine Type** – Select the type of Target machine from the dropdown menu. Make sure to select the machine type that matches the requirements of the application.
@@ -279,14 +282,14 @@ Once communication is established between the Agent and the Replication Serve
 
 Once these steps are completed, the machine will be launchable and will show Continuous Data Protection (Disaster Recovery) or Continuous Data Replication (Migration) in its MACHINE
 
-![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.015.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 015](https://user-images.githubusercontent.com/88475952/129558068-e7940a37-7ddc-4794-bd14-2d10d684fbaf.png)
 
 **3.3.4 [Test](javascript:void\(0\);) the [Failover](javascript:void\(0\);) by creating one or more [Target](javascript:void\(0\);) machines.** 
 
 This will create [Target](javascript:void\(0\);) machines for the selected [Source](javascript:void\(0\);) machines based on [machine](javascript:void\(0\);) and network properties you defined in the Blueprint section for each. The [Test](javascript:void\(0\);) does not stop replication.
 
 1) Before you prepare your Source machines for recovery into the Target infrastructure, you should test your CloudEndure Disaster Recovery solution. The Test Mode action launches and runs a Target machine in the Target infrastructure for the Source machine you selected for testing. You can test a Failover by selecting the relevant machines and clicking the Test Mode action.
-   ![https://docs.cloudendure.com/Content/Resources/Images/test2.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.016.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 016](https://user-images.githubusercontent.com/88475952/129558333-b59a57c0-e63e-462c-994a-92f173cf4d59.png)
 1) To test a Failover of one or more machines into your Target cloud region of choice, make sure that all the required machines’ status shows a purple launch icon in the Status column. This will create Target machines for the selected Source machines based on machine and network properties you defined in the Blueprint section.
 1) Important! The Test action will delete previously launched Target machines!
 1) Important! You should run a Test prior to launching a machine in Recovery Mode. After testing either SSH (Linux) or RDP (Windows) into your machine to ensure that everything is working correctly. 
@@ -298,11 +301,11 @@ This will create [Target](javascript:void\(0\);) machines for the selected [S
 
 1) Before you start the Failover, open the User Console > Machines page. There, verify that the Source machine you want to Failover has the following status indications under each column.
 - **DATA REPLICATION PROGRESS** - Continuous Data Protection
-- **STATUS** – ![https://docs.cloudendure.com/Content/Resources/Images/CloudEndure%20Manual%20-%20Chapter%2010%20-%20Configuring%20and%20Running%20Disaster%20Recovery%20XML/CloudEndure\_8\_18x17.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.017.png) Target machine can be launched
+- **STATUS** – <img width="9" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 017" src="https://user-images.githubusercontent.com/88475952/129558602-3ce16f32-aa36-4b41-a307-89c81a0049f4.png"> Target machine can be launched
 - **DISASTER RECOVERY LIFECYCLE** – Tested Recently
-  ![https://docs.cloudendure.com/Content/Resources/Images/recovery3.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.018.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 018](https://user-images.githubusercontent.com/88475952/129558792-b3e93d92-8766-41f4-ade6-1f3ac6dd63a9.png)
 1) Check the box to the left each machine you want to Failover and click the Recovery Mode option under the LAUNCH X TARGET MACHINES button.
-   ![https://docs.cloudendure.com/Content/Resources/Images/recovery4.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.019.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 019](https://user-images.githubusercontent.com/88475952/129559049-1e0342d2-283c-4d3d-b6d1-52582170e058.png)
 1) A confirmation message will appear. Click NEXT to launch the Recovery machine.
 1) Choose the Recovery Point for the Target machine in Recovery Mode. This will indicate which Recovery Point the system will use when launching new Target machines for the Failover. You can either choose the Latest Recovery Point, or a previous Recovery Point from the list.
 1) After choosing your Recovery Point, click CONTINUE WITH LAUNCH.
@@ -312,18 +315,18 @@ This will create [Target](javascript:void\(0\);) machines for the selected [S
 1. ` `every 1 day in the past 30 days
 1) vCenter only allows you a single Recovery Point every 1 day in the past 25 days.
 1) A message will appear on the upper right corner of the CloudEndure User Console, informing you that the Failover has started and that a Target machine is being launched for the selected Source machine.
-   ![https://docs.cloudendure.com/Content/Resources/Images/CloudEndure%20Manual%20-%20Chapter%2010%20-%20Configuring%20and%20Running%20Disaster%20Recovery%20XML/CloudEndure\_14.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.020.png)
+   ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 020](https://user-images.githubusercontent.com/88475952/129559286-8364e2ac-7a24-4b1c-9aaf-ed3183cf30da.png)
 1) Once the Failover is completed, on the DISASTER RECOVERY LIFECYCLE column, the status will change to Failed over The CloudEndure Console assumes that you have completed the Failover process by this point.
 
-![https://docs.cloudendure.com/Content/Resources/Images/CloudEndure\_30.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.021.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 021](https://user-images.githubusercontent.com/88475952/129559477-68d6481b-301c-4df6-90bf-0a01f54f5d23.png)
 
 To view additional information on the test, click the Source machine. The Machine Dashboard page will appear, displaying the date of the Failover (last recovery launch.)
-![https://docs.cloudendure.com/Content/Resources/Images/CloudEndure\_31.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.022.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 022](https://user-images.githubusercontent.com/88475952/129559645-0ef3627a-4a71-4453-a034-97326b876602.png)
 ## **3.3.6 Failing Over specific machines**
 ` `To **Failover** specific machines, you will need to create a new Project and configure it identically to your original DR Project (same Target region, license, credentials and Replication Settings.) Once you have the Project ready:
 
 1. Check the box to the left of the specific machines you want to Failover in the original Project and move them to the newly created Project using the **Move X Machines to Another Project** option within the **Machine Actions** menu.
-   ![https://docs.cloudendure.com/Content/Resources/Images/recovery6.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.023.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 023](https://user-images.githubusercontent.com/88475952/129559792-5e173e24-4deb-4f12-a1e2-c68b894bd301.png)
 1. Once all the machines have been moved, switch to the newly created Project and repeat the steps in the above **Performing the Failover** section.
 
 **Note**: If you were unable to move the machines, then the Project configurations are most likely not identical. Contact Support for additional help.
@@ -339,11 +342,11 @@ The mechanism for preparing for Failback differs based on your original Sourc
 
 The following instructions illustrate how to perform a Failback with the aid of CloudEndure for non-cloud and other cloud infrastructures.
 
-![](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.024.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 024](https://user-images.githubusercontent.com/88475952/129560005-a107a2c9-f08f-40ac-8d8a-da84ed94f31f.png)
 
 **AWS to AWS Failback: -**
 
-![https://docs.cloudendure.com/Content/Resources/Images/failaws.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.025.png)
+<img width="435" alt="1st image" src="https://user-images.githubusercontent.com/88475952/129560215-0002d2bc-b58f-4dff-8255-6b8454b19a22.png">
 
 1. In the event of planned or unplanned downtime, begin the Failover process by using the CloudEndure User Console to launch recovery machines in your Disaster Recovery Target infrastructure.
 1. The mechanism for preparing for Failback differs based on your original Source and Target infrastructure, as defined in the Replication Settings of your Project.
@@ -351,31 +354,32 @@ The following instructions illustrate how to perform a Failback with the aid o
 1. After performing a successful Failover, you will want to Failback your machines. CloudEndure allows you to prepare for Failback by reversing the direction of Data Replication from the Target machine back to the Source machine. The CloudEndure User Console will then treat the currently launched Target machines as Source machines and data will flow from your selected Target infrastructure back to your original Source infrastructure.
 1. Click on the PROJECT ACTIONS menu and select Prepare for Failback
 
-![https://docs.cloudendure.com/Content/Resources/Images/ed74.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.026.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 026](https://user-images.githubusercontent.com/88475952/129560638-3f4421a2-0f91-43bc-9a9d-914f9f00b998.png)
 
-![https://docs.cloudendure.com/Content/Resources/Images/prep2.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.027.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 027](https://user-images.githubusercontent.com/88475952/129560848-2dedb4f7-315d-4e70-bb9d-7b093fc4de79.png)
 
 1. Click CONTINUE on the Prepare for Failback prompt.
 1. Once the action is performed the Project will display Preparing for failback to original Source next to the CloudEndure Disaster Recovery Project type and the machines will display Initiating Data Replication under the DATA REPLICATION PROGRESS column. The direction of Data Replication will be reversed and your machines will be failed back from your Target back to your Source
 
-![https://docs.cloudendure.com/Content/Resources/Images/pre4%20(1).png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.028.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 028](https://user-images.githubusercontent.com/88475952/129561076-f6976b07-3ecc-4915-ae9f-224095525388.png)
 
 1. The machines will undergo the entire initiation process until they reach Continuous Data Protection status under the DATA REPLICATION PROGRESS column.
 
-![https://docs.cloudendure.com/Content/Resources/Images/pre5.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.029.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 029](https://user-images.githubusercontent.com/88475952/129562661-076ea2a6-1804-4200-b7c7-4e4ecf2c46ba.png)
 
 1. **[**vCenter as a Source infrastructure only] You must edit the Failback Settings of any Project prior to performing the Failback. These settings will be used as a template for the Replication Settings of each of your machines when you perform a Failback.
 #### **AWS to vCenter Failback**
-![https://docs.cloudendure.com/Content/Resources/Images/vcfail\_889x425.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.030.png)
-
+<img width="445" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 030" src="https://user-images.githubusercontent.com/88475952/129561551-9192c5fb-ce0f-4206-a1ab-5bf1c2be75da.png">
 1. To change the Failback settings, navigate to the Setup & Info tab on the left-hand navigation menu and click on FAILBACK SETTINGS.
 
-![https://docs.cloudendure.com/Content/Resources/Images/failbacksettings.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.031.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 031](https://user-images.githubusercontent.com/88475952/129562987-9311a5a1-955b-4c1b-a821-e9ac65f80e71.png)
 
 1. Edit the settings as desired and then click SAVE FAILBACK SETTINGS on the bottom right of the page.
 1. After performing the Prepare for Failback action, you can edit the Failback Settings and Back to Normal settings of your individual machines.
 
-**Performing a Failback Using the CloudEndure Failback Client - Non cloud or other cloud Source to an AWS Target![https://docs.cloudendure.com/Content/Resources/Images/otherfail.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.032.png)**
+**Performing a Failback Using the CloudEndure Failback Client - Non cloud or other cloud Source to an AWS Target**
+            
+ <img width="367" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 032" src="https://user-images.githubusercontent.com/88475952/129563204-faa565db-d714-46da-8aed-3af57eb417b5.png">
 
 1. You can perform the Prepare for Failback action by following these steps:
 1. Click on the PROJECT ACTIONS menu and select Prepare for Failback
@@ -416,6 +420,7 @@ The following instructions illustrate how to perform a Failback with the aid o
 1. Click NEXT on the Launch Target Instance dialog.
 1. Select the Latest Recovery Point and click CONTINUE WITH LAUNCH.
 1. When the Test or the Recovery are finished, the Failback Client will indicate that the failback has been finished and that the machine will be rebooted. The Target machine will eject the Failback Client and reboot into the new operating system.
+            
 ## **3.3.8Failing Back specific machines**
 In certain cases, you may want to perform a failback for a single machine (or various - but not all - machines) in a Project with multiple machines (AWS Source or a vCenter Source to an AWS Target.)
 
@@ -439,16 +444,18 @@ You cannot move a Source machine that is in the middle of a Job (launching 
 **Moving the Machines**
 
 1. From the **Project** list, select the Project that includes the Source machine you want to move.
-   ![https://docs.cloudendure.com/Content/Resources/Images/Resetting%20Your%20Password\_46.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.033.png)
+   ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 033](https://user-images.githubusercontent.com/88475952/129563652-3107ed81-a558-4e32-b02f-33d0552df3be.png)
 1. Open the **Machines** page, and check the box next to the name of the Source machines you want to move.
 
 **Note**: You can move multiple machines at once by selecting them on the **Machines** page.
-![https://docs.cloudendure.com/Content/Resources/Images/ed29.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.034.png)
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 034](https://user-images.githubusercontent.com/88475952/129563928-2801693c-2f56-461b-a30d-1a71f01ac96d.png)
 
 1. Click the **MACHINE ACTIONS** button, and select the **Move X Machine to Another Project** option.
-   ![https://docs.cloudendure.com/Content/Resources/Images/ed30.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.035.png)
+   
+![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 035](https://user-images.githubusercontent.com/88475952/129564237-6147c69c-47ca-46b8-9552-3e6fb9762126.png)
+            
 1. The **Move machine to another Project** dialog box will appear. Open the **Move** drop-down list and select the destination Project to which the Source machine will move. Click **MOVE MACHINES**.
-   ![https://docs.cloudendure.com/Content/Resources/Images/Resetting%20Your%20Password\_48.png](Aspose.Words.f67be463-1366-4aa2-8b5d-078ec80c60ab.036.png)
+  <img width="253" alt="Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 036" src="https://user-images.githubusercontent.com/88475952/129564430-3a8d5749-4975-429e-906f-aba26edc180b.png">
 
 **Note**: Projects that are not listed do not match the criteria.
 
