@@ -9,68 +9,6 @@
 
 
 
-# **Contents**
-
-[**1.	Introduction	 PAGEREF _Toc55485465 \h 2**](#_Toc55485465)
-
-[**2. Benefits of CloudEndure Disaster Recovery	 PAGEREF _Toc55485466 \h 3**](#_Toc55485466)
-
-[**3. Cloud Endure Disaster Recovery	 PAGEREF _Toc55485467 \h 3**](#_Toc55485467)
-
-[3.1 SAML Single Sign-On	 PAGEREF _Toc55485468 \h 3](#_Toc55485468)
-
-[3.1.1 Single Sign-On SAML Authentication through ADFS	 PAGEREF _Toc55485469 \h 4](#_Toc55485469)
-
-[3.1.2 Enabling RelayState in ADFS	 PAGEREF _Toc55485470 \h 5](#_Toc55485470)
-
-[3.1.3 Configuring SAML in the CloudEndure Console with AD FS	 PAGEREF _Toc55485471 \h 6](#_Toc55485471)
-
-[3.2 Signing into the CloudEndure User Console Using Corporate Credentials	 PAGEREF _Toc55485472 \h 8](#_Toc55485472)
-
-[3.2.1 Manual Sign In	 PAGEREF _Toc55485473 \h 8](#_Toc55485473)
-
-[3.2.2 Automatic Sign in using a Direct Link	 PAGEREF _Toc55485474 \h 8](#_Toc55485474)
-
-[3.3 The Disaster Recovery Process	 PAGEREF _Toc55485475 \h 9](#_Toc55485475)
-
-[Disaster Recovery Life Cycle	 PAGEREF _Toc55485476 \h 9](#_Toc55485476)
-
-[Network Architecture	 PAGEREF _Toc55485477 \h 9](#_Toc55485477)
-
-[3.3.1 Install the Cloud Endure Agent on the Source machine.	 PAGEREF _Toc55485478 \h 10](#_Toc55485478)
-
-[3.3.2 Configure the Target machine Blueprint for each machine.	 PAGEREF _Toc55485479 \h 11](#_Toc55485479)
-
-[3.3.3 Wait until all machines enter Continuous Data Protection.	 PAGEREF _Toc55485480 \h 12](#_Toc55485480)
-
-[3.3.4 Test the Failover by creating one or more Target machines.	 PAGEREF _Toc55485481 \h 13](#_Toc55485481)
-
-[3.3.5 Initiate a Failover.	 PAGEREF _Toc55485482 \h 14](#_Toc55485482)
-
-[3.3.6 Failing Over specific machines	 PAGEREF _Toc55485483 \h 16](#_Toc55485483)
-
-[3.3.7 Performing a Failback with CloudEndure	 PAGEREF _Toc55485484 \h 17](#_Toc55485484)
-
-[3.3.8Failing Back specific machines	 **PAGEREF _Toc55485485 \h 23**](#_Toc55485485)
-
-[3.3.9 Return to normal operations.	 PAGEREF _Toc55485486 \h 26](#_Toc55485486)
-
-[3.4 Post Launch Scripts	 PAGEREF _Toc55485487 \h 27](#_Toc55485487)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1. # **Introduction**
 
