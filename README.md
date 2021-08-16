@@ -1,4 +1,4 @@
-Sogeti One Deliver
+
 
 
 |Capgemini-Sogeti-Onedeliver|
@@ -11,7 +11,7 @@ Sogeti One Deliver
 
 # **Contents**
 
-` `TOC \o "1-3" \h \z \u [**1.	Introduction	 PAGEREF _Toc55485465 \h 2**](#_Toc55485465)
+[**1.	Introduction	 PAGEREF _Toc55485465 \h 2**](#_Toc55485465)
 
 [**2. Benefits of CloudEndure Disaster Recovery	 PAGEREF _Toc55485466 \h 3**](#_Toc55485466)
 
