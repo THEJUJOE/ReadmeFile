@@ -100,7 +100,7 @@ For ADFS 2.0, you must install update KB2681584 (Update Rollup 2) or KB2790338 (
 <useRelayStateForIdpInitiatedSignOn enabled="true" /> ...
 </microsoft.identityServer.web>
 
-####**3.1.3 Configuring SAML in the CloudEndure Console with AD FS**
+#### **3.1.3 Configuring SAML in the CloudEndure Console with AD FS**
 
 1. Before SSO can be used, you will need to set up the following parameters within the CloudEndure Console. You can obtain these parameters by following these directions:
    1. Identity Provider ID
@@ -138,7 +138,7 @@ For ADFS 2.0, you must install update KB2681584 (Update Rollup 2) or KB2790338 (
 
 Once SAML integration is configured, you can sign in to the CloudEndure User Console either through the CloudEndure User Console Sign In page or through a direct login link.
 
-####**3.2.1 Manual Sign In**
+#### **3.2.1 Manual Sign In**
 
 1. Navigate to the CloudEndure User Console Sign In page.
 1. Click on Use corporate credentials (SSO) on the bottom.
@@ -199,7 +199,7 @@ The REPLICATION SETTINGS page enables you to define your Source and Target�
 - After you make your selection, the installation starts. By default, when the installation is completed successfully, the replication of the Source machines starts automatically, and you can monitor it through the CloudEndure User Console.
 - In addition to the standard installation procedure, CloudEndure provides you with additional installation options, which enable you to customize the installation to your network and corporate needs. These installation options include, among others: using command line arguments, installing the Agent without automatically starting replication, and performing a silent installation.
 
-####**3.3.2 Configure the [Target machine](javascript:void\(0\);) Blueprint for each [machine](javascript:void\(0\);).**
+#### **3.3.2 Configure the [Target machine](javascript:void\(0\);) Blueprint for each [machine](javascript:void\(0\);).**
 
 - The Target machine Blueprint is a set of instructions on how to launch a Target machine for the selected Source machine. The Blueprint settings will serve as the base settings for the creation of the Target machine.
 - You can change the Blueprint after the Target machine has been launched. For the new Blueprint setting to take effect, you will need to launch a new Target machine.
@@ -216,7 +216,7 @@ The REPLICATION SETTINGS page enables you to define your Source and Target�
 1) **Security groups** – Security Groups are connected to subnets. You can change the default Security Group only if you selected an existing subnet (and NOT the Create New option). Therefore, if you want to configure the Security Groups value, it is recommended to set in advance its subnet, so the subnet will already appear on the Subnet drop-down list.
 1) **Private IP** – Each machine that is launched in the cloud will be allocated a Private IP. By default, a new Private IP is created. You can also set a custom Private IP.
 
-####**3.3.3 Wait until all machines enter Continuous Data Protection.**
+#### **3.3.3 Wait until all machines enter Continuous Data Protection.**
 
 Once communication is established between the Agent and the Replication Server, Data Replication begins. The following are the Data Replication steps:
 
@@ -230,7 +230,7 @@ Once these steps are completed, the machine will be launchable and will show 
 
 ![Aspose Words f67be463-1366-4aa2-8b5d-078ec80c60ab 015](https://user-images.githubusercontent.com/88475952/129558068-e7940a37-7ddc-4794-bd14-2d10d684fbaf.png)
 
-####**3.3.4 [Test](javascript:void\(0\);) the [Failover](javascript:void\(0\);) by creating one or more [Target](javascript:void\(0\);) machines.** 
+#### **3.3.4 [Test](javascript:void\(0\);) the [Failover](javascript:void\(0\);) by creating one or more [Target](javascript:void\(0\);) machines.** 
 
 This will create [Target](javascript:void\(0\);) machines for the selected [Source](javascript:void\(0\);) machines based on [machine](javascript:void\(0\);) and network properties you defined in the Blueprint section for each. The [Test](javascript:void\(0\);) does not stop replication.
 
@@ -243,7 +243,7 @@ This will create [Target](javascript:void\(0\);) machines for the selected [S
 1) If your Target infrastructure is an extension of your Source, it is recommended that you isolate the Target subnet to ensure that the test Target machines will not affect your original workloads. Do not forget to remove the isolation (or select a different subnet in the Blueprint page) before performing an actual Failover.
 1) After the Target machines are created, allow them time to boot.
 
-####**3.3.5 Initiate a [Failover](javascript:void\(0\);).**
+#### **3.3.5 Initiate a [Failover](javascript:void\(0\);).**
 
 1) Before you start the Failover, open the User Console > Machines page. There, verify that the Source machine you want to Failover has the following status indications under each column.
 - **DATA REPLICATION PROGRESS** - Continuous Data Protection
